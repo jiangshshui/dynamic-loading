@@ -1,0 +1,14 @@
+server:
+  port: 8080
+
+hot-reload:
+  enabled: true
+  # 相对进程工作目录。IDE 或 mvn spring-boot:run 请从项目根目录启动。
+  source-root: src/main/java
+  poll-interval: 300ms
+  # 文件大小和修改时间连续保持不变，才认为这次修改已经写完。
+  quiet-period: 800ms
+
+logging:
+  level:
+    com.example.hotreload.reload: INFO
